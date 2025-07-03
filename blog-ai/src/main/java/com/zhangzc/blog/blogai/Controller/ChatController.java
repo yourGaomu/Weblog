@@ -46,7 +46,7 @@ public class ChatController {
         if (one == null) {
             throw new IsNoRole("你没有权限", "500");
         }
-        //如果是清楚俩天记录的请求
+        //如果是清楚俩天记录的请求，应该使用另外一个链接
 
         if (one.getChatCount()==0) {
             throw new IsEmptyForChatCount("对不起你的对话次数已经用尽了","500");
