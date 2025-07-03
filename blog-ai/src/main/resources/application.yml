@@ -1,0 +1,46 @@
+server:
+  port: 8083
+langchain4j:
+  open-ai:
+    chat-model:
+      api-key: sk-140cb8883e8743dabc411f1cce9ba5cf
+      model-name: qwen-plus
+      base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+      log-requests: true
+      log-responses: true
+
+    streaming-chat-model:
+      api-key: sk-140cb8883e8743dabc411f1cce9ba5cf
+      model-name: qwen-plus
+      base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+      log-requests: false
+      log-responses: false
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.108.58.72:3307/blog?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+    username: mikasa
+    password: zhangzc123
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 20
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: Weblog-HikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+
+  data:
+    redis:
+      host: 47.108.58.72
+      port: 6379
+      database: 0
+      timeout: 30s
+      lettuce:
+        pool:
+          max-active: 8       # 最大活跃连接数
+          max-idle: 8         # 最大空闲连接数
+          min-idle: 0         # 最小空闲连接数

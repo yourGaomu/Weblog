@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhangzc.blog.blogcommon.Mapper.TStatisticsArticlePvMapper">
+
+    <resultMap id="BaseResultMap" type="com.zhangzc.blog.blogcommon.pojo.domain.TStatisticsArticlePv">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="pvDate" column="pv_date" jdbcType="DATE"/>
+            <result property="pvCount" column="pv_count" jdbcType="BIGINT"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,pv_date,pv_count,
+        create_time,update_time
+    </sql>
+</mapper>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhangzc.blog.blogcommon.Mapper.TBlogSettingsMapper">
+
+    <resultMap id="BaseResultMap" type="com.zhangzc.blog.blogcommon.pojo.domain.TBlogSettings">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="logo" column="logo" jdbcType="VARCHAR"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="author" column="author" jdbcType="VARCHAR"/>
+            <result property="introduction" column="introduction" jdbcType="VARCHAR"/>
+            <result property="avatar" column="avatar" jdbcType="VARCHAR"/>
+            <result property="githubHomepage" column="github_homepage" jdbcType="VARCHAR"/>
+            <result property="csdnHomepage" column="csdn_homepage" jdbcType="VARCHAR"/>
+            <result property="giteeHomepage" column="gitee_homepage" jdbcType="VARCHAR"/>
+            <result property="zhihuHomepage" column="zhihu_homepage" jdbcType="VARCHAR"/>
+            <result property="mail" column="mail" jdbcType="VARCHAR"/>
+            <result property="isCommentSensiWordOpen" column="is_comment_sensi_word_open" jdbcType="TINYINT"/>
+            <result property="isCommentExamineOpen" column="is_comment_examine_open" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,logo,name,
+        author,introduction,avatar,
+        github_homepage,csdn_homepage,gitee_homepage,
+        zhihu_homepage,mail,is_comment_sensi_word_open,
+        is_comment_examine_open
+    </sql>
+</mapper>

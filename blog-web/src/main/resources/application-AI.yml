@@ -1,0 +1,3 @@
+qwen:
+  api-key: sk-140cb8883e8743dabc411f1cce9ba5cf
+  endpoint: https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation

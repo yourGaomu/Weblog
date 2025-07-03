@@ -1,0 +1,5 @@
+jwt:
+  # 签发人
+  issuer: zhangzc
+  # 秘钥
+  secret: G2ER7M+vnP9iyee3nWjafH15MzquXkthpDa2m3/6uOZYcLWexKwNLNzXzNN69d/v99uPOJmOhDeJMwPFuuvKhQ==
