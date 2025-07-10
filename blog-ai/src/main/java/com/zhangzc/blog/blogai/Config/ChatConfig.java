@@ -24,16 +24,11 @@ public class ChatConfig {
 
     @Bean
     public ChatMemoryProvider chatMemoryProvider() {
-        ChatMemoryProvider chatMemoryProvider = new ChatMemoryProvider() {
-            @Override
-            public ChatMemory get(Object memoryid) {
-                return MessageWindowChatMemory.builder()
-                        .maxMessages(30)
-                        .id(memoryid)
-                        .chatMemoryStore(ridsChatMemoryStore)
-                        .build();
-            }
-        };
+        ChatMemoryProvider chatMemoryProvider = memoryid -> MessageWindowChatMemory.builder()
+                .maxMessages(30)
+                .id(memoryid)
+                .chatMemoryStore(ridsChatMemoryStore)
+                .build();
         return chatMemoryProvider;
     }
 }

@@ -3,7 +3,6 @@ package com.zhangzc.blog.blogai.Threds;
 
 import com.zhangzc.blog.blogai.Pojo.domain.TAi;
 import com.zhangzc.blog.blogai.Service.TAiService;
-import org.springframework.stereotype.Component;
 
 import java.util.concurrent.Callable;
 
