@@ -1,8 +1,10 @@
 package com.zhangzc.blog.blogcommon.MQ.MQService.Impl;
 
 import com.zhangzc.blog.blogcommon.MQ.MQService.RabbitMQService;
+import com.zhangzc.blog.blogcommon.Service.TArticleService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import com.zhangzc.blog.blogcommon.pojo.domain.TArticle;
 
 @Service
 @RequiredArgsConstructor

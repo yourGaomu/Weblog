@@ -1,7 +1,9 @@
 package com.zhangzc.blog.blogsearch.Runner;
 
 import com.zhangzc.blog.blogcommon.Service.TArticleContentService;
+import com.zhangzc.blog.blogcommon.Service.TArticleService;
 import com.zhangzc.blog.blogcommon.exception.exceptionClasses.BizException;
+import com.zhangzc.blog.blogcommon.pojo.domain.TArticle;
 import com.zhangzc.blog.blogcommon.pojo.domain.TArticleContent;
 import com.zhangzc.blog.blogsearch.Config.LuceneYml;
 import com.zhangzc.blog.blogsearch.Const.IndexSearch;

@@ -21,4 +21,7 @@
         summary,create_time,update_time,
         is_deleted,read_num,type
     </sql>
+    <select id="CountAllArticleRead" resultType="java.lang.Long">
+        SELECT SUM(read_num) FROM t_article WHERE read_num > 0;
+    </select>
 </mapper>
