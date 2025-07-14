@@ -2,6 +2,7 @@ package com.zhangzc.blog.blogcommon.Utils;
 
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import io.netty.util.internal.MathUtil;
 import lombok.Setter;
 
 import java.io.Serializable;
@@ -23,6 +24,19 @@ public class PageResult implements Serializable {
     public String status;
     public String meg;
     public Object data;
+
+    public static <T> PageResult Success(Object data,Long total,Long size,Long current) {
+        PageResult response = new PageResult();
+        response.setStatus("200");
+        response.setMeg("查询成功");
+        response.setPages((total + size - 1) / size);
+        response.setData(data);
+        response.setTotal(total);
+        response.setSize(size);
+        response.setCurrent(current);
+        response.setSuccess(true);
+        return response;
+    }
 
     public static <T> PageResult Success(IPage page) {
         PageResult response = new PageResult();

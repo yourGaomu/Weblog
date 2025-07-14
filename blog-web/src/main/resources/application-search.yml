@@ -1,0 +1,2 @@
+lucene:
+  indexDir: java_workspace/lucene-index #需要读取当前的路径再拼接

@@ -1,10 +1,7 @@
 package com.zhangzc.blog.blogcommon.MQ.MQService.Impl;
 
 import com.zhangzc.blog.blogcommon.MQ.MQService.RabbitMQService;
-import com.zhangzc.blog.blogcommon.Service.TArticleService;
-import com.zhangzc.blog.blogcommon.pojo.domain.TArticle;
 import lombok.RequiredArgsConstructor;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 @Service

@@ -2,7 +2,6 @@ package com.zhangzc.blog.blogxxljob.Tasks.Impl;
 
 import com.xxl.job.core.biz.model.ReturnT;
 import com.xxl.job.core.handler.annotation.XxlJob;
-import com.zhangzc.blog.blogcommon.Service.TArticleService;
 import com.zhangzc.blog.blogcommon.Service.TStatisticsArticlePvService;
 import com.zhangzc.blog.blogcommon.Utils.TimeUtil;
 import com.zhangzc.blog.blogcommon.pojo.domain.TStatisticsArticlePv;

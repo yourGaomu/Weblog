@@ -22,7 +22,8 @@ public enum ResponseCodeEnum implements BaseExceptionInterface {
     SERCH_QQNUMBER_FAILE("20006","查找相关的QQ信息失败"),
     COMMENT_SENT_FAILE("20007","评论保存失败"),
     COMMENT_CONTAIN_SENSITIVE_WORD("20015", "评论内容中包含敏感词，请重新编辑后再提交"),
-    COMMENT_WAIT_EXAMINE("20016", "评论已提交, 等待博主审核通过")
+    COMMENT_WAIT_EXAMINE("20016", "评论已提交, 等待博主审核通过"),
+    WIKI_NOT_FOUND("20013", "该知识库不存在")
     ;
 
     // 异常码

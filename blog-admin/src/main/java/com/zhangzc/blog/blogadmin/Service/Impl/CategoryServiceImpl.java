@@ -8,15 +8,12 @@ import com.zhangzc.blog.blogadmin.Pojo.Vo.FindCategoryArticlePageListRspVO;
 import com.zhangzc.blog.blogadmin.Pojo.Vo.FindCategoryListRspVO;
 import com.zhangzc.blog.blogadmin.Service.CategoryService;
 import com.zhangzc.blog.blogcommon.Service.TArticleCategoryRelService;
-import com.zhangzc.blog.blogcommon.Service.TArticleService;
 import com.zhangzc.blog.blogcommon.Service.TCategoryService;
 import com.zhangzc.blog.blogcommon.Utils.PageResult;
 import com.zhangzc.blog.blogcommon.Utils.R;
-import com.zhangzc.blog.blogcommon.pojo.domain.TArticle;
 import com.zhangzc.blog.blogcommon.pojo.domain.TArticleCategoryRel;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.BeanUtils;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.time.ZoneId;
